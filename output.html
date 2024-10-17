@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buy | Sell Product</title>
+</head>
+<body style="background-color: #cecece; font-family: cursive;">
+    <!-- Navbar -->
+    <div style="display: flex; justify-content: space-around; border: 1px solid #000; padding: 10px; width: 90%; margin: auto; background-color: #eaeaea;">
+        <a href="#" style="text-decoration: none; color: black;">Home</a> |
+        <a href="#" style="text-decoration: none; color: black;">Generate Link</a> |
+        <a href="#" style="text-decoration: none; color: black;">Transaction History</a> |
+        <a href="#" style="text-decoration: none; color: black;">Policy</a> |
+        <a href="#" style="text-decoration: none; color: black;">Logout</a>
+    </div>
+
+    <!-- Content -->
+    <div style="width: 92%; margin: auto; display: grid; gap: 5px; padding-top: 30px;" action="" method="get" enctype="multipart/form-data">
+     <table style="text-align: start;">
+
+        <!-- Title -->
+        <tr>
+            <td style="width: 250px; vertical-align: top;" rowspan="10">
+                <img src="img/sushi.png" alt="logo" id="image" style="width: 200px; height: 200px; border: 1px solid black;">
+            </td>
+            <td style="vertical-align: text-top; width: 200px;">
+                <label for="product_name">Title Here :</label>
+            </td>
+            <td style="vertical-align: text-top;">
+                <span>Sushi Cat Rolled</span>
+            </td>
+        </tr>
+
+        <!-- Description -->
+        <tr>
+            <td style="vertical-align: text-top; width: 200px;">
+                <label for="description">Description :</label>
+            </td>
+            <td style="vertical-align: top; display: flex; flex-direction: column; gap: 5px;">
+                <span>Delicious sushi cat rolled with omelette and rice</span>
+                <span>Create with Love 💝</span>
+                <span>Made in China</span>
+            </td>
+        </tr>
+
+        <!-- Pay to -->
+        <tr>
+            <td style="vertical-align: text-top; width: 200px;">
+                <label for="account_number">Total Amount :</label>
+            </td>
+            <td style="vertical-align: text-top;">
+                <span>$ 100.000</span>
+            </td>
+        </tr>
+
+        <!-- Pay to -->
+        <tr>
+            <td style="vertical-align: text-top; width: 200px;">
+                <label for="account_number">Pay to :</label>
+            </td>
+            <td style="vertical-align: text-top;">
+                <span>123-456-789-0</span>
+            </td>
+        </tr>
+
+        <!-- Payment type -->
+        <tr>
+            <td style="vertical-align: text-top;">
+                <label for="bank">Payment Type :</label>
+            </td>
+            <td style="vertical-align: text-top;">
+                <select name="bank" id="bank" style="width: 200px; height: 25px;" required>
+                    <option value="" disabled selected hidden>-- Select Payment --</option>
+                    <option value="paypal">PayPall</option>
+                    <option value="Visa Debit">Visa Debit</option>
+                </select>
+            </td>
+        </tr>
+
+        <!-- Account Holder -->
+        <tr>
+            <td style="vertical-align: text-top;">
+                <label for="account_holder" style="right: 3px; position: relative;">Account Holder :</label>
+            </td>
+            <td style="vertical-align: text-top;">
+                <input type="text" name="account_holder" id="account_holder" style="width: 500px; height: 25px;" placeholder="Name Here" required>
+            </td>
+        </tr>
+
+        <!-- Account no -->
+        <tr>
+            <td style="vertical-align: text-top;">
+                <label for="transaction">Account No :</label>
+            </td>
+            <td style="vertical-align: text-top;">
+                <input type="text" name="account_holder" id="account_holder" style="width: 500px; height: 25px;" placeholder="123-456-789-0" required>
+                    <br>
+                <span style="font-size: 12px;">*if the transaction is for 3 person, choose 3 from drop-down list</span>
+                    <br>
+                <div style="accent-color: green; color: green; font-size: 12px; display: flex; align-items: center;">
+                    <input type="checkbox" name="send_to_mobile" id="send_to_mobile" checked>
+                    <label for="send_to_mobile">Send to Mobile Phone</label>
+                </div>
+                <div style="accent-color: green; color: green; font-size: 12px; display: flex; align-items: center;">
+                    <input type="checkbox" name="send_to_email" id="send_to_email" checked>
+                    <label for="send_to_email">Send to Email</label>
+                </div>
+            </td>
+        </tr>
+
+        <!-- Send to Mobile Phone -->
+        <tr>
+            <td style="vertical-align: text-top;">
+                <label for="mobile_phone">Send to Mobile Phone :</label>
+            </td>
+            <td style="vertical-align: text-top;">
+                <input type="text" name="mobile_phone" id="mobile_phone" style="width: 500px; height: 25px;" placeholder="081234567890, 081234567891" required>
+            </td>
+        </tr>
+
+        <!-- Send to Email -->
+        <tr>
+            <td style="vertical-align: text-top;" rowspan="2">
+                <label for="email">Send to Email :</label>
+            </td>
+            <td style="vertical-align: text-top;">
+                <input type="text" name="email" id="email" style="width: 500px; height: 25px;" placeholder="example@example.com, example2@example.com" required>
+            </td>
+        </tr>
+
+        <!-- Generate Nabr Link -->
+        <tr>
+            <td style="padding-top: 30px;">
+                <button type="submit" style="background-color: green; color: white; font-weight: 600; box-shadow: 2px 2px 2px black; border: 2px solid black; padding: 5px;">Pay using QuidLink</button>
+            </td>
+        </tr>
+
+        <!-- Footer -->
+         <tr>
+            <td colspan="3" style="text-align: center; padding: 15px 0;">
+                <div style="border: 1px solid black; align-items: center;"></div>
+            </td>
+         </tr>
+     </table>
+    </div>
+</body>
+</html>
